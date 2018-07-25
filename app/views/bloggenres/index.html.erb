@@ -1,0 +1,20 @@
+<h1>Bloggenres#index</h1>
+<p>＃ジャンル＆データの一覧</p>
+<table>
+    <tr>
+        <th width=50px>ID</th>
+        <th width=100px>名前</th>
+        <th width=600px>メモ</th>
+        <th width=20%></th>
+    </tr>
+    <% @data.each do |obj| %>
+    <tr>
+        <td><%= obj.id %></td>
+        <td><%= obj.name %></td>
+        <td><%= obj.memo %></td>
+        <td><a href='/bloggenres/<%= obj.id %>'>編集</a></td>
+    </tr>
+    <% end %>
+    </table>
+    <p><a href='/bloggenres/add'>新規作成 ＞＞</a></p> 
+
