@@ -1,13 +1,13 @@
 <h1>Bloggenres#add</h1>
 <p>#ジャンルデータの作成</p>
 <% if @bloggenre.errors.any? %>
-<ul>
-    <% @bloggenre.errors.full_messages.each do |err| %>
-        <li>
-            <%= err %>
-        </li>
-    <%end%>
-</ul>
+    <ul>
+        <% @bloggenre.errors.full_messages.each do |err| %>
+            <li>
+                <%= err %>
+            </li>
+        <% end %>
+    </ul>
 <% end %>
 
 <table>
